@@ -21,7 +21,7 @@ fi
 YEST=$( date --date="yesterday" +"%Y-%m-%d" )
 BASEDIR="/opt/monitor/log";
 OUTPUT="`hostname`";
-OUTFILENAME="syslog_${YEST}.log"
+OUTFILENAME="syslog_${YEST}.log.gz"
 OUTFILE="${BASEDIR}/${OUTPUT}/${OUTFILENAME}"
 
 HOST="$1"
