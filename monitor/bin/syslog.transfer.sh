@@ -17,7 +17,7 @@ then
         exit
 fi
 
-# Delcaring variables
+# Variables Defination
 YEST=$( date --date="yesterday" +"%Y-%m-%d" )
 BASEDIR="/opt/monitor/log";
 OUTPUT="`hostname`";
