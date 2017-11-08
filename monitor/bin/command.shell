@@ -1,0 +1,2 @@
+## to replace two varaibles by each other 
+for i in `cat test | awk '{print $1 }' | uniq ` ; do echo $i ; x="$(echo $i|gawk '{ print strftime("%c", $1); }')" ; echo $x ; cat test | sed 's/'"$i"'/'"$x"'/' ; done 
