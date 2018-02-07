@@ -15,7 +15,7 @@ else
 
 fi
 
-if grep "listen_addresses = '*'" $postconfig 2>/dev/null ; then
+if grep -v "^#" $postconfig | grep "listen_addresses = '*'" 2>/dev/null ; then
 	echo "the configuration already exist, Please check the postgresql.conf configuration file"
 else
 	echo "listen_addresses = '*' ">> $postconfig
